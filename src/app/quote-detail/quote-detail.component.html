@@ -1,0 +1,8 @@
+<p>{{quote.description}}</p>
+<p>Quote posted {{quote.completeDate|dateCount}} days ago</p>
+
+<div class="card-footer">
+    <a (click)="likeButtonClick()" ><i class="fa fa-thumbs-up fa-lg like"></i>{{upVotes}}</a>  &nbsp;
+    <a (click)="dislikeButtonClick()"><i class="fa fa-thumbs-down fa-lg dislike"></i>{{downVotes}}</a>
+    <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Goal</button>
+  </div>
